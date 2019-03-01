@@ -130,20 +130,20 @@ DessertImages = [
   'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW1yfmlNOcGJG-emIqNNfz88AM3DlcxYsYym55ekQK1KS-BitJ")',
 ]
 AppetizersDivs = [
-  '<div class="item"><p>Tiny Hot Pockets <span class="price">$8</span><br/><small>Mayo with vegetables. </small></p></div>',
-			'<div class="item"><p>Mini Shrimp Cocktails <span class="price">$13</span><br/><small>Shrimp with our special cocktail sauce. </small></p></div>',
-			'<div class="item"><p>Small Spicy Bone-less Chicken wings <span class="price">$8</span><br/><small>Have these nice spicy hot wings with ranch or BBQ sauce.</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Tiny Hot Pockets <span class="price">$8</span><br/><small>Mayo with vegetables. </small></p></div>',
+			'<div class="item" onclick=this.classList.toggle("show-description")><p>Mini Shrimp Cocktails <span class="price">$13</span><br/><small>Shrimp with our special cocktail sauce. </small></p></div>',
+			'<div class="item" onclick=this.classList.toggle ("show-description")><p>Small Spicy Bone-less Chicken wings <span class="price">$8</span><br/><small>Have these nice spicy hot wings with ranch or BBQ sauce.</small></p></div>',
 ]
 
 EntreesDivs = [
-  '<div class="item"><p>Steak<span class="price">$14</span><br/><small> Coated with brown sugar sauce and asparagus with butter. </small></p></div>',
-			'<div class="item"><p>Lasagna<span class="price">$22</span><br/><small>Pasta with cheese and tomato sauce. </small></p></div>',
-			'<div class="item"><p>Cassarole<span class="price">$8</span><br/><small>Beef with a BBQ sauce.</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Steak<span class="price">$14</span><br/><small> Coated with brown sugar sauce and asparagus with butter. </small></p></div>',
+			'<div class="item" onclick=this.classList.toggle("show-description")><p>Lasagna<span class="price">$22</span><br/><small>Pasta with cheese and tomato sauce. </small></p></div>',
+			'<div class="item" onclick=this.classList.toggle("show-description")><p>Cassarole<span class="price">$8</span><br/><small>Beef with a BBQ sauce.</small></p></div>',
 ]
 DessertsDivs = [
-'<div class="item"><p>Chocolate Cake <span class="price">$14</span><br/><small>Lava Cake with chocolate filling . </small></p></div>',
-			'<div class="item"><p>Strawberry Cheesecake <span class="price">$22</span><br/><small>Tri-tip  Contains with strawberry syrup and cheese cake (dairy). </small></p></div>',
-			'<div class="item"><p>Macaroons <span class="price">$8</span><br/><small>Cookies with any filling you want.</small></p></div>',
+'<div class="item" onclick=this.classList.toggle("show-description")><p>Chocolate Cake <span class="price">$14</span><br/><small>Lava Cake with chocolate filling . </small></p></div>',
+			'<div class="item" onclick=this.classList.toggle("show-description")><p>Strawberry Cheesecake <span class="price">$22</span><br/><small>Tri-tip  Contains with strawberry syrup and cheese cake (dairy). </small></p></div>',
+			'<div class="item" onclick=this.classList.toggle("show-description")><p>Macaroons <span class="price">$8</span><br/><small>Cookies with any filling you want.</small></p></div>',
 ]
 function appetizers() {
   Mine= document.getElementById("Yummy")
@@ -184,9 +184,6 @@ function desserts() {
   }
 }
 
-  $('div').on('click', function() {
-      $(this).toggleClass('show-description');
-  });
 </script>
 
 </body>
